@@ -36,8 +36,8 @@ const projects = [
     title: "Portfolio Website",
     subtitle: "Modern personal portfolio using React",
     image: port,
-    github: "#",
-    live: "#",
+    github: "https://github.com/Guru16T/My-Portfolio",
+    live: "https://my-portfolio-ten-phi-32.vercel.app/",
     tech: ["Html", "Css", "Js", "Bootstrap", "React"],
   },
   {
