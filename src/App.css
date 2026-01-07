@@ -1,29 +1,3 @@
-/* .home-bg{
-    background-image: url("./assets/profile-bg.webp");
-    object-fit: cover;
-    width: 100%;
-    height: auto;
-} */
-
-.intro-wrapper {
-  position: fixed;
-  inset: 0;
-  width: 100vw;
-  height: 100dvh; /* mobile safe height */
-  background: black;
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Responsive video */
-.intro-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* 👈 key for responsiveness */
-}
-
 .home-bg {
     background-image: 
         linear-gradient(
@@ -52,3 +26,59 @@
     }
 }
 
+.intro-wrapper {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100dvh;
+  background: black;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+ 
+/* Video */
+.intro-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+ 
+@media (max-width: 480px) {
+  .intro-wrapper {
+    height: 100vh; /* fallback for older browsers */
+  }
+ 
+  .intro-video {
+    object-fit: cover;
+  }
+}
+ 
+@media (min-width: 481px) and (max-width: 768px) {
+  .intro-video {
+    object-fit: cover;
+  }
+}
+ 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .intro-video {
+    object-fit: cover;
+  }
+}
+ 
+@media (min-aspect-ratio: 16/9) {
+  .intro-video {
+    width: 100%;
+    height: auto;
+  }
+}
+ 
+@media (max-aspect-ratio: 16/9) {
+  .intro-video {
+    width: auto;
+    height: 100%;
+  }
+}
+ 
