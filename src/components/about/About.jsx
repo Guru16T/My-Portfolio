@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import "./About.css";
 import guru from "./guru.jpg";
 import Resume from "../resume/Resume";
-import pdf from "./Guru.pdf"
+import pdf from "./guru.pdf"
 import boot from "./skills/bootstrap.png";
 import css from "./skills/css.png";
 import express from "./skills/express js.png";
