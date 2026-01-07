@@ -95,7 +95,7 @@ function About() {
               </p>
 
               <div class="py-4">
-                <a href="#" class="upload-btn text-white form-control py-3 border-0 rounded-3 "><i class="bi bi-download text-white"></i> Download CV</a><br />
+                <a href={pdf} class="upload-btn text-white form-control py-3 border-0 rounded-3 "><i class="bi bi-download text-white"></i> Download CV</a><br />
                 <a href="#contact" class="contact-btn form-control py-3 border-0 rounded-3"><i class="bi bi-envelope contact-icon"></i> Contact</a>
               </div>
 
