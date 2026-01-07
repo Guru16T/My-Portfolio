@@ -1,0 +1,92 @@
+/* GLOBAL FIX */
+* {
+    box-sizing: border-box;
+}
+
+/* CARD */
+.timeline-card {
+    position: relative;
+    background-color: rgb(44, 47, 49);
+    border-radius: 22px;
+    padding: 28px;
+    margin-bottom: 32px;
+    transition: all 0.35s ease;
+}
+
+.timeline-card:hover {
+    transform: translateY(-6px);
+}
+
+/* ICON */
+.timeline-icon {
+    position: absolute;
+    top: -22px;
+    left: 28px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ff4d4d, #ff7a7a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    box-shadow: 0 12px 30px rgba(255, 77, 77, 0.6);
+}
+
+/* BADGE */
+.timeline-badge {
+    display: inline-block;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    font-weight: 700;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: rgba(255, 77, 77, 0.15);
+    color: #ff7a7a;
+    margin-bottom: 14px;
+}
+
+/* TEXT */
+.timeline-card h4 {
+    font-size: 22px;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 6px;
+}
+
+.timeline-sub {
+    font-size: 15px;
+    color: #a1a1aa;
+    margin-bottom: 8px;
+}
+
+.timeline-date {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #ff7a7a;
+    margin-bottom: 14px;
+}
+
+.timeline-desc {
+    font-size: 15px;
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+/* 📱 MOBILE FIX */
+@media (max-width: 576px) {
+    .timeline-card {
+        padding: 20px;
+    }
+
+    .timeline-icon {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .timeline-card h4 {
+        font-size: 20px;
+    }
+}

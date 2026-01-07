@@ -1,0 +1,290 @@
+.about-border {
+  width: 40px;
+  height: 2px;
+  background: #ff4d4f;
+}
+
+
+.about-color {
+  color: #FF4D4F !important;
+  background-color: #2c1a1a !important;
+  font-size: 12px;
+}
+
+.upload-btn {
+  background-color: #FF4D4F !important;
+  text-decoration: none !important;
+}
+
+.contact-btn {
+  background-color: #332121 !important;
+  color: #ff4d4f !important;
+  text-decoration: none !important;
+}
+
+
+.profile-img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: fill;
+}
+
+.card-bg,
+.cards-bg,
+.skills-card {
+  background: rgb(44, 47, 49);
+}
+
+.cards-bg {
+  transition: transform 0.35s ease;
+}
+
+.card-glow:hover .cards-bg {
+  transform: translateY(-6px);
+}
+
+/* .upload-btn {
+  background: #ff4d4f;
+  color: white;
+  text-decoration: none;
+}
+
+.contact-btn {
+  background: #332121;
+  color: #ff4d4f;
+  text-decoration: none;
+}
+
+.about-links {
+  width: 40px;
+  height: 40px;
+  border-radius: 40%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: 0.3s;
+}
+
+.about-links:hover {
+  background: #ff4d4f;
+  transform: translateY(-4px);
+}
+
+.about-logo {
+  color: #ff4d4f;
+} */
+
+/* SKILLS */
+.skills-wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.skills-card {
+  padding: 32px;
+  border-radius: 24px;
+  /* max-width: 650px; */
+  width: 100%;
+}
+
+.section-tag {
+  font-size: 12px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: #2c1a1a;
+  color: #ff4d4f;
+  font-weight: 700;
+}
+
+.skills-title {
+  margin: 16px 0 20px;
+  font-size: 28px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.skills-filter {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.filter-btn {
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: #ff4d4f;
+  border-color: #ff4d4f;
+}
+
+.skill-count {
+  color: #9ca3af;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.skill-count span {
+  color: #ff4d4f;
+  font-weight: 700;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.skill-pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #e5e7eb;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: 0.35s;
+}
+
+.skill-pill i {
+  color: #ff4d4f;
+}
+
+.skill-pill:hover {
+  transform: translateY(-4px) scale(1.05);
+  color: white;
+}
+
+.animate {
+  animation: fadeUp 0.4s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-card {
+    max-width: 100%;
+  }
+}
+
+/* ===== Base (Desktop) ===== */
+.upload-btn,
+.contact-btn {
+  padding: 12px 28px;
+  font-size: 16px;
+  border-radius: 8px;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+.upload-btn {
+  background: #ff4d4f;
+  color: white;
+  text-decoration: none;
+}
+
+.contact-btn {
+  background: #332121;
+  color: #ff4d4f;
+  text-decoration: none;
+}
+
+.upload-btn:hover,
+.contact-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* ===== Social / About Icons ===== */
+.about-links {
+  width: 40px;
+  height: 40px;
+  border-radius: 40%;
+  background: rgba(255, 255, 255, 0.2);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  font-size: 16px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.about-links:hover {
+  background: #ff4d4f;
+  transform: translateY(-4px);
+}
+
+.about-logo {
+  color: #ff4d4f;
+}
+
+@media (max-width: 1024px) {
+
+  .upload-btn,
+  .contact-btn {
+    padding: 10px 24px;
+    font-size: 15px;
+  }
+
+  .about-links {
+    width: 36px;
+    height: 36px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .upload-btn,
+  .contact-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .about-links {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .upload-btn,
+  .contact-btn {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+
+  .about-links {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+  }
+}

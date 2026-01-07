@@ -1,0 +1,33 @@
+.nav-txt{
+    color: white !important;
+}
+
+.nav-txt:active{
+    color: #FF4D4F !important;
+}
+
+.nav-txt:hover{
+    color: #FF4D4F !important;
+}
+
+.nav-btn{
+    color: white !important;
+    background-color: #FF4D4F !important;
+}
+
+.nav-btn:hover{
+    color: white !important;
+    background: color-mix(in srgb, #FF4D4F, transparent 15%) !important;
+}
+.nav-item{
+    padding-right: 50px !important;
+}
+.get{
+    color: white !important;
+    background-color: #FF4D4F !important;
+}
+.fo{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
