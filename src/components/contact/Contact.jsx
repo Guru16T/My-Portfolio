@@ -11,20 +11,20 @@ function Contact() {
   const form = useRef();
  
   const sendEmail = (e) => {
-    e.preventDefault(); // Prevent page reload
+    e.preventDefault(); 
  
     emailjs
       .sendForm(
-        "service_ryhlm73", // Replace with your EmailJS service ID
-        "template_39w6oxb", // Replace with your EmailJS template ID
+        "service_ryhlm73", 
+        "template_39w6oxb", 
         form.current,
-        "ba2W9mhRxj1xJIId4" // Replace with your EmailJS public key
+        "ba2W9mhRxj1xJIId4"
       )
       .then(
         (result) => {
           console.log(result.text);
           toast.success("Message sent successfully!");
-          e.target.reset(); // Clear the form
+          e.target.reset(); 
         },
         (error) => {
           console.log(error.text);
@@ -37,7 +37,6 @@ function Contact() {
     <section className="contact-wrap" id="contact">
       <div className="container" data-aos="fade-up" id="msg">
  
-        {/* TITLE */}
         <div className="contact-head">
           <h1>Contact</h1>
           <p>
@@ -47,7 +46,6 @@ function Contact() {
  
         <div className="contact-grid" data-aos="fade-up-right">
  
-          {/* LEFT */}
           <div className="contact-left">
  
             <div className="info-card">
@@ -80,7 +78,6 @@ function Contact() {
  
           </div>
  
-          {/* RIGHT */}
           <div className="contact-right" data-aos="fade-up-left" >
             <form className="contact-form" ref={form} onSubmit={sendEmail}>
               <input type="text" name="user_name" placeholder="Your Name" required />
