@@ -16,7 +16,6 @@ function Home() {
             loop: true,
         });
 
-        // cleanup (IMPORTANT in React)
         return () => {
             typed.destroy();
         };
