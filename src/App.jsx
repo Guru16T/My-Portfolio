@@ -11,7 +11,6 @@ function App() {
     setShowVideo(false);
   };
 
-  // safety fallback
   useEffect(() => {
     const timer = setTimeout(() => setShowVideo(false), 8000);
     return () => clearTimeout(timer);
