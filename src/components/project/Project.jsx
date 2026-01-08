@@ -83,21 +83,17 @@ function Projects() {
     <section className="projects-section" id="projects">
       <div className="container text-center" data-aos="fade-up">
 
-        {/* TITLE */}
         <div className="mb-5">
           <p className="home-color">PROJECT</p>
           <div className="about-border mx-auto"></div>
         </div>
 
-        {/* CAROUSEL */}
         <div className="project-carousel position-relative d-flex justify-content-center align-items-center">
 
-          {/* LEFT CARD */}
           <div className="side-card left d-none d-lg-block">
             <img src={projects[getIndex(index - 1)].image} alt="" />
           </div>
 
-          {/* CENTER CARD */}
           <div className="center-card-wrapper px-3">
             <div className="project-card-main">
               <img src={projects[index].image} alt={projects[index].title} />
@@ -106,7 +102,6 @@ function Projects() {
                 <h3>{projects[index].title}</h3>
                 <p>{projects[index].subtitle}</p>
 
-                {/* TECH */}
                 <div className="d-flex justify-content-center gap-2 flex-wrap mt-2">
                   {projects[index].tech.map((t, i) => (
                     <span key={i} className="badge tech-badge">
@@ -115,7 +110,6 @@ function Projects() {
                   ))}
                 </div>
 
-                {/* LINKS */}
                 <div className="project-links mt-3">
                   <a href={projects[index].github} target="_blank" rel="noreferrer">
                     <FaGithub />
@@ -128,12 +122,10 @@ function Projects() {
             </div>
           </div>
 
-          {/* RIGHT CARD */}
           <div className="side-card right d-none d-lg-block">
             <img src={projects[getIndex(index + 1)].image} alt="" />
           </div>
 
-          {/* ARROWS */}
           <button className="nav-arrow left" onClick={prev}>
             <FaArrowLeft />
           </button>
