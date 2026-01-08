@@ -1,7 +1,7 @@
 .home-bg {
     background-image: 
         linear-gradient(
-            rgba(0, 0, 0, 0.6),   /* dark overlay */
+            rgba(0, 0, 0, 0.6),
             rgba(0, 0, 0, 0.6)
         ),
         url("./assets/profile-bg.webp");
@@ -26,9 +26,6 @@
     }
 }
 
-/* =========================
-   INTRO WRAPPER
-========================= */
 .intro-wrapper {
   position: fixed;
   inset: 0;
@@ -39,9 +36,6 @@
   overflow: hidden;
 }
 
-/* =========================
-   VIDEO – DEFAULT (DESKTOP)
-========================= */
 .intro-video {
   position: absolute;
   top: 50%;
@@ -57,13 +51,9 @@
   object-fit: cover;
 }
 
-/* =========================
-   MOBILE PHONES (portrait)
-   → show full object
-========================= */
 @media (max-width: 480px) {
   .intro-wrapper {
-    height: 100vh; /* fallback */
+    height: 100vh; 
   }
 
   .intro-video {
@@ -75,10 +65,6 @@
   }
 }
 
-/* =========================
-   LARGE MOBILES / TABLETS
-   → show full object
-========================= */
 @media (min-width: 481px) and (max-width: 768px) {
   .intro-video {
     width: 100%;
@@ -89,10 +75,6 @@
   }
 }
 
-/* =========================
-   TABLETS & DESKTOP
-   → full screen cover
-========================= */
 @media (min-width: 769px) {
   .intro-video {
     min-width: 100%;
