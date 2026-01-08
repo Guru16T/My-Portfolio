@@ -47,7 +47,6 @@ function About() {
     ],
   };
 
-  /* COUNT ANIMATION */
   useEffect(() => {
     let start = 0;
     const end = skills[activeSkill].length;
@@ -63,7 +62,6 @@ function About() {
     <div className="container-fluid py-5 bg-dark overflow-hidden" id="about">
       <div className="container" data-aos="fade-up">
 
-        {/* TITLE */}
         <div className="text-center mb-5">
           <p className="home-color">ABOUT ME</p>
           <div className="about-border mx-auto"></div>
@@ -77,7 +75,6 @@ function About() {
 
         <div className="row g-5 align-items-start">
 
-          {/* LEFT PROFILE CARD */}
           <div className="col-lg-4 col-md-6 col-12" data-aos="fade-up-right">
             <div className="card-bg text-center p-4 rounded-5">
               <img
@@ -108,7 +105,6 @@ function About() {
             </div>
           </div>
 
-          {/* RIGHT CONTENT */}
           <div className="col-lg-8 my-5">
             <div className="mb-4">
               <span className="px-2 py-1 rounded-5 py-2 fw-bold px-3 about-color">ABOUT ME</span><br /><br />
@@ -117,7 +113,6 @@ function About() {
                 MongoDB, and React.js.</span>
             </div>
 
-            {/* INFO GRID */}
             <div className="row mb-4">
               {[
                 ["bi-briefcase", "EXPERIENCE", "2+ Months"],
@@ -139,14 +134,12 @@ function About() {
               ))}
             </div>
 
-            {/* SKILLS */}
             <div className="skills-wrapper" data-aos="fade-up-left">
               <div className="skills-card">
 
                 <span className="section-tag">Core Skills</span>
                 <h3 className="skills-title">Technical Proficiency</h3>
 
-                {/* FILTER */}
                 <div className="skills-filter">
                   {["all", "frontend", "backend"].map((type) => (
                     <button
@@ -159,12 +152,10 @@ function About() {
                   ))}
                 </div>
 
-                {/* COUNT */}
                 <p className="skill-count">
                   Showing <span>{count}</span> skills
                 </p>
 
-                {/* SKILL PILLS */}
                 <div className="skills-grid">
                   {skills[activeSkill].map((skill, index) => (
                     <div key={index} className="skill-pill animate">
