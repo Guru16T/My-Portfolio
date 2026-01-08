@@ -38,47 +38,35 @@
   justify-content: center;
   overflow: hidden;
 }
- 
+
 /* Video */
 .intro-video {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
- 
-@media (max-width: 480px) {
-  .intro-wrapper {
-    height: 100vh; /* fallback for older browsers */
-  }
- 
+
+/* 📱 Mobile – FORCE cover */
+@media (max-width: 768px) {
   .intro-video {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
   }
 }
- 
-@media (min-width: 481px) and (max-width: 768px) {
-  .intro-video {
-    object-fit: cover;
-  }
-}
- 
-@media (min-width: 769px) and (max-width: 1024px) {
-  .intro-video {
-    object-fit: cover;
-  }
-}
- 
-@media (min-aspect-ratio: 16/9) {
+
+/* 🖥️ Only DESKTOP aspect-ratio handling */
+@media (min-width: 769px) and (min-aspect-ratio: 16/9) {
   .intro-video {
     width: 100%;
     height: auto;
   }
 }
- 
-@media (max-aspect-ratio: 16/9) {
+
+@media (min-width: 769px) and (max-aspect-ratio: 16/9) {
   .intro-video {
     width: auto;
     height: 100%;
   }
 }
- 
+
